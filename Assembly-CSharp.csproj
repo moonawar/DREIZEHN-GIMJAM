@@ -36,8 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Shoot\PlayerShoot.cs" />
      <Compile Include="Assets\Scripts\Shoot\BulletPhysics.cs" />
+     <Compile Include="Assets\Scripts\Shoot\PlayerShoot.cs" />
+     <Compile Include="Assets\Scripts\Shoot\PlayerMovement.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -626,11 +627,17 @@
     <Reference Include="Unity.2D.PixelPerfect">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -644,6 +651,9 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.IK.Editor">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
@@ -656,8 +666,8 @@
     <Reference Include="Unity.2D.Path.Editor">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -668,14 +678,26 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
@@ -685,6 +707,12 @@
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -700,6 +728,9 @@
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+        <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>D:\Addin Munawwar\Repositories\Unity\Dreizehn GIM JAM\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
