@@ -14,4 +14,8 @@ public class BulletPhysics : MonoBehaviour
         bulletDirection = new Vector3(0, bulletSpeed, 0);
         transform.Translate(bulletDirection*Time.deltaTime);
     }
+
+    private void OnBecameInvisible() {
+        Destroy(gameObject);
+    }
 }
