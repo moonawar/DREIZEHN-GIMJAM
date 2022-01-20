@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3326912462546582631}
   - component: {fileID: 81482413238682986}
   - component: {fileID: 3934376070037515821}
+  - component: {fileID: 3392041100280751243}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -97,7 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22fddb8e9a0bab142954362945ff012e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootCooldown: 1.8
   bullet: {fileID: 3457334699767630486, guid: 6dcb5e89bebc0fb4cb42ecc83f071f98, type: 3}
 --- !u!50 &81482413238682986
 Rigidbody2D:
@@ -135,3 +135,19 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 81482413238682986}
   cam: {fileID: 0}
+--- !u!58 &3392041100280751243
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5043699212918891480}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.34

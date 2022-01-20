@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-    [SerializeField] float shootCooldown;
+    float shootCooldown = 1.8f;
     [SerializeField] GameObject bullet;
     Vector3 pos, bulletTranslation; Quaternion rot; float nextFireTime = 0;
 
@@ -21,10 +21,7 @@ public class PlayerShoot : MonoBehaviour
             {
                 Shoot();
                 nextFireTime = Time.time + shootCooldown;
-            } else {
-                Debug.Log(string.Format("On cooldown for {0} second.", (nextFireTime-Time.time)));
-            }
-            
+            } 
         }
     }
 }
