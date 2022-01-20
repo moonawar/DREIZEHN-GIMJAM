@@ -7,11 +7,11 @@ public class BulletPhysics : MonoBehaviour
     [SerializeField] float bulletSpeed;
     Vector3 bulletDirection;
 
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.name != "Player")
         {
             Destroy(gameObject);
-        }
+        } 
     }
     void Update(){
         bulletDirection = new Vector3(0, bulletSpeed, 0);
