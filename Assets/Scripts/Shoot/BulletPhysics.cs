@@ -10,7 +10,7 @@ public class BulletPhysics : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Enemy")
         {
-            other.gameObject.GetComponent<LivingEntity>().DamageSelf();
+            other.gameObject.GetComponent<Health>().DamageSelf(1);
             Destroy(gameObject);
         } else if (other.gameObject.name != "Player"){
             Destroy(gameObject);

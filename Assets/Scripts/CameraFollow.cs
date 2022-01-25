@@ -15,11 +15,15 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 targetPosition = target.position + offset;
-        Vector3 boundPosition = new Vector3(
-            Mathf.Clamp(targetPosition.x, minValue.x, maxValue.x),
-            Mathf.Clamp(targetPosition.y, minValue.y, maxValue.y),
-            Mathf.Clamp(targetPosition.z, minValue.z, maxValue.z));
-        transform.position = Vector3.SmoothDamp(transform.position, boundPosition, ref velocity, smoothTime);
+        if (target != null)
+        {
+            Vector3 targetPosition = target.position + offset;
+            Vector3 boundPosition = new Vector3(
+                Mathf.Clamp(targetPosition.x, minValue.x, maxValue.x),
+                Mathf.Clamp(targetPosition.y, minValue.y, maxValue.y),
+                Mathf.Clamp(targetPosition.z, minValue.z, maxValue.z));
+            transform.position = Vector3.SmoothDamp(transform.position, boundPosition, ref velocity, smoothTime); 
+        }
+
     }
 }
