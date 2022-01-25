@@ -8,10 +8,13 @@ public class BulletPhysics : MonoBehaviour
     Vector3 bulletDirection;
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.name != "Player")
+        if (other.gameObject.tag == "Enemy")
         {
+            other.gameObject.GetComponent<LivingEntity>().DamageSelf();
             Destroy(gameObject);
-        } 
+        } else if (other.gameObject.name != "Player"){
+            Destroy(gameObject);
+        }
     }
     void Update(){
         bulletDirection = new Vector3(0, bulletSpeed, 0);
