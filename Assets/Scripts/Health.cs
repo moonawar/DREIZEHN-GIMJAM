@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int health;
+    public int health, maxHealth;
+    public HealthBar healthBar;
+
+    private void Awake() {
+        healthBar.SetMaxHealth(maxHealth);
+    }
 
     public void DamageSelf(int damage){
         health = health - damage;
+        healthBar.SetCurrentHealth(health);
         Debug.Log(gameObject.name + " HP is now " + health);
     }
 
