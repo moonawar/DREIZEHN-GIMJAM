@@ -8,12 +8,19 @@ public class Health : MonoBehaviour
     public HealthBar healthBar;
 
     private void Awake() {
-        healthBar.SetMaxHealth(maxHealth);
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth); 
+        }
     }
 
     public void DamageSelf(int damage){
         health = health - damage;
-        healthBar.SetCurrentHealth(health);
+        if (healthBar != null)
+        {
+            healthBar.SetCurrentHealth(health);
+        }
+        
         Debug.Log(gameObject.name + " HP is now " + health);
     }
 
