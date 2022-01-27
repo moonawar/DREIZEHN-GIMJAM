@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelScript : MonoBehaviour
 {
-
     public void Pass()
     {
         int currentLevel = SceneManager.GetActiveScene().buildIndex;

@@ -33,6 +33,21 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(levelIndex);
     }
 
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+    }
+
+    public void StagesMenu()
+    {
+        SceneManager.LoadScene(5);
+    }
+
     // Update is called once per frame
     void Update()
     {
