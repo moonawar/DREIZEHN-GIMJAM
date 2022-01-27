@@ -1332,6 +1332,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8874733065610656349, guid: 114a4623adb6a054b995dab5a3ff82e6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8874733065610656351, guid: 114a4623adb6a054b995dab5a3ff82e6, type: 3}
       propertyPath: m_Name
       value: Big Monster
@@ -2037,6 +2041,10 @@ PrefabInstance:
     - target: {fileID: 99220084997233218, guid: bbfb8161e89732647af863b5aa0798c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675267866508238118, guid: bbfb8161e89732647af863b5aa0798c7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3251394401543335705, guid: bbfb8161e89732647af863b5aa0798c7, type: 3}
       propertyPath: m_Name
