@@ -48,6 +48,16 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(5);
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void ChoosePlayer()
+    {
+        SceneManager.LoadScene(2);
+    }
+
     // Update is called once per frame
     void Update()
     {

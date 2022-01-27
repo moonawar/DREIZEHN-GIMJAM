@@ -16,6 +16,6 @@ public class LevelScript : MonoBehaviour
         }
 
         Debug.Log("LEVEL" + PlayerPrefs.GetInt("levelIsUnlocked") + " UNLOCKED");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(5);
     }
 }
