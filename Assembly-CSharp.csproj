@@ -43,11 +43,14 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Shoot\PlayerShoot.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyAttack.cs" />
-     <Compile Include="Assets\EnemyCount.cs" />
+     <Compile Include="Assets\Scripts\EnemyCount.cs" />
      <Compile Include="Assets\Scripts\HealthBarFollow.cs" />
      <Compile Include="Assets\Scripts\LevelScript.cs" />
      <Compile Include="Assets\Scripts\Shoot\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Scripts\Enemies\BossAttack.cs" />
+     <Compile Include="Assets\Scripts\Enemies\TentacleAttack.cs" />
+     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
