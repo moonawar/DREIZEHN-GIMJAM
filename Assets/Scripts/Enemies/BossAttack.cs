@@ -10,18 +10,19 @@ public class BossAttack : MonoBehaviour
     // Tentacle Attack
     [SerializeField] GameObject tentacle;
     Vector3 tentaclePosition, randomPosition;
-    float tentacleAttackRadius = 4f, attackCooldown = 2f, nextAttack; 
+    float tentacleAttackRadius = 4f, tentacleAttackCooldown = 2f, nextTentacleAttack; 
     int tentacleAmount = 8;
 
     // Laser Attack
     [SerializeField] GameObject laser;
     int laserStartPoint, laserEndPoint, pointDistance; 
     Quaternion laserRotation; Vector3 laserPosition;
+    float laserAttackCooldown = 1f, nextLaserAttack; 
 
 
     void Awake()
     {
-        LaserAttack();
+        
     }
 
     bool isOverlapping(Vector3 spawnPoint, float collisionRadius){
@@ -60,10 +61,15 @@ public class BossAttack : MonoBehaviour
     }
     void Update()
     {
-        if (Time.time > nextAttack)
+        if (Time.time > nextTentacleAttack)
         {
             Invoke("TentacleAttack", 3);
-            nextAttack = Time.time + attackCooldown;
+            nextTentacleAttack = Time.time + tentacleAttackCooldown;
+        }
+        if (Time.time > nextLaserAttack)
+        {
+            Invoke("LaserAttack", 4);
+            nextLaserAttack = Time.time + laserAttackCooldown;
         }
     }
 }
