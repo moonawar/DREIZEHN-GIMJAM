@@ -37,8 +37,11 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Lost.cs" />
+     <Compile Include="Assets\Scripts\Enemies\TentacleAttack.cs" />
+     <Compile Include="Assets\Scripts\Enemies\BossAttack.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Shoot\BulletPhysics.cs" />
+     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Shoot\PlayerShoot.cs" />
@@ -48,9 +51,7 @@
      <Compile Include="Assets\Scripts\LevelScript.cs" />
      <Compile Include="Assets\Scripts\Shoot\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
-     <Compile Include="Assets\Scripts\Enemies\BossAttack.cs" />
-     <Compile Include="Assets\Scripts\Enemies\TentacleAttack.cs" />
-     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
+     <Compile Include="Assets\Scripts\Enemies\LaserAttack.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
