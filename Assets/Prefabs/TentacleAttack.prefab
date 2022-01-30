@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8504709695171418034}
   - component: {fileID: -847142644583172360}
   - component: {fileID: -7550977777446676605}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TentacleAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 614024874796104726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.817899, y: 2.4917173, z: 0}
-  m_LocalScale: {x: 2.9097736, y: 2.9097736, z: 2.9097736}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -109,7 +109,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614024874796104726}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1

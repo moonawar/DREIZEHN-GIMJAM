@@ -6,11 +6,15 @@ public class TentacleAttack : MonoBehaviour
 {
 
     [SerializeField] Color32 warnColor, attackColor;
-    float warningTime = 1f, disappearTime = 2f;
+    float warningTime = 0.5f, disappearTime = 2f;
+    bool isOnAttack = false;
+    GameObject player;
     SpriteRenderer sprite; CircleCollider2D tentacleCollider;
     private void Awake() {
         sprite = GetComponent<SpriteRenderer>();
         tentacleCollider = GetComponent<CircleCollider2D>();
+        player = GameObject.FindWithTag("Player");
+        Invoke("LaunchAttack", warningTime);
     }
 
     private void Start() {
@@ -18,23 +22,24 @@ public class TentacleAttack : MonoBehaviour
     }
 
     void LaunchAttack(){
+        isOnAttack = true;
         sprite.color = attackColor;
-        tentacleCollider.enabled = true;
+        if (tentacleCollider.IsTouching(player.GetComponent<CircleCollider2D>()))
+        {
+            player.GetComponent<Health>().DamageSelf(1);
+        }
         Invoke("Disappear", disappearTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && isOnAttack)
         {
-            other.gameObject.GetComponent<Health>().DamageSelf(1);
+            player.GetComponent<Health>().DamageSelf(1);
         }
     }
     void Disappear(){
+        isOnAttack = true;
         Destroy(gameObject);
     }
-    
-    void Update()
-    {
-        Invoke("LaunchAttack", warningTime);
-    }
+
 }
