@@ -45,7 +45,7 @@ public class LevelManager : MonoBehaviour
 
     public void StagesMenu()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(3);
     }
 
     public void MainMenu()

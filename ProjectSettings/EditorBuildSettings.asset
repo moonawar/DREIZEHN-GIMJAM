@@ -15,12 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ChoosePlayer.unity
     guid: 883f63730e1c51c46b31c6d192c3bde1
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: fc2e24d5804f3e349b1404975973d104
-  - enabled: 1
-    path: Assets/Scenes/Winning.unity
-    guid: bcd9a53a2c8a87a4e9b7c7b786738d22
-  - enabled: 1
     path: Assets/Scenes/LevelManager.unity
     guid: 857584e3888a58242a5778fb090e4ad8
   - enabled: 1

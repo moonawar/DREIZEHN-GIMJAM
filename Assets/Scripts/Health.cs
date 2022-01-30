@@ -6,12 +6,13 @@ public class Health : MonoBehaviour
 {
     public int health, maxHealth;
     public HealthBar healthBar;
-    public Lost lost;
+    public bool isDestroyed = false;
 
     private void Awake() {
         if (healthBar != null)
         {
-            healthBar.SetMaxHealth(maxHealth); 
+            healthBar.SetMaxHealth(maxHealth);
+            
         }
     }
 
@@ -29,7 +30,9 @@ public class Health : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            isDestroyed = true;
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
     }
 }
