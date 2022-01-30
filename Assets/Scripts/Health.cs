@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
     public int health, maxHealth;
     public HealthBar healthBar;
     public bool isDestroyed = false;
+    public Lost lost;
 
     private void Awake() {
         if (healthBar != null)
@@ -29,10 +30,14 @@ public class Health : MonoBehaviour
     public void Update()
     {
         if (health <= 0)
-        {
-            isDestroyed = true;
-            gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        {   
+            if (gameObject.tag == "Player"){
+                lost.GameOver();
+                Destroy(gameObject);
+            } else {
+                Debug.Log("Died");
+                Destroy(gameObject);
+            }
         }
     }
 }

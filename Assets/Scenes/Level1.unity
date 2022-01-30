@@ -631,37 +631,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &410285926 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5043699212918891480, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-  m_PrefabInstance: {fileID: 1305381723}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &410285927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410285926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 914f05b75478df048a0d7140631d1be8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOver: {fileID: 1186377346}
-  player: {fileID: 410285926}
-  health: {fileID: 410285933}
---- !u!114 &410285933 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-  m_PrefabInstance: {fileID: 1305381723}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410285926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3c9dc39cc5afc34282b4619d2dd7596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &489063221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,7 +2359,6 @@ GameObject:
   - component: {fileID: 1186377349}
   - component: {fileID: 1186377348}
   - component: {fileID: 1186377347}
-  - component: {fileID: 1186377352}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -2497,21 +2465,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1186377352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186377346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 914f05b75478df048a0d7140631d1be8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOver: {fileID: 1186377346}
-  player: {fileID: 410285926}
-  health: {fileID: 410285933}
 --- !u!1001 &1252271550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2773,6 +2726,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 103826497743136972, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1186377346}
     - target: {fileID: 3402415573248036462, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2781,6 +2738,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3481763382892020648, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1186377346}
     - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: cam
       value: 
@@ -2837,29 +2798,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5043699212918891483, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 6549742979394291229, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 7265272074709665854, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-      propertyPath: lost
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: scene
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-      propertyPath: isDestroyed
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: canvasObject
