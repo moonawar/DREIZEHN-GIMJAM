@@ -6,7 +6,8 @@ public class LaserAttack : MonoBehaviour
 {
     // Variables
     [SerializeField] Color32 warnColor, attackColor;
-        float warningTime = 1f, disappearTime = 1f;
+    float warningTime = 1f, disappearTime = 1f;
+    bool isOnAttack = false;
     
     // Component
     SpriteRenderer sprite; BoxCollider2D laserCollider;
@@ -26,6 +27,7 @@ public class LaserAttack : MonoBehaviour
     }
 
     void LaunchAttack(){
+        isOnAttack = true;
         sprite.color = attackColor;
         if (laserCollider.IsTouching(player.GetComponent<CircleCollider2D>()))
         {
@@ -35,7 +37,7 @@ public class LaserAttack : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && isOnAttack == true)
         {
             player.GetComponent<Health>().DamageSelf(1);
         }
