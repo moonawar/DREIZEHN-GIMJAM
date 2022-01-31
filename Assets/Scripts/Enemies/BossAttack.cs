@@ -44,7 +44,7 @@ public class BossAttack : MonoBehaviour
             {
                 Instantiate(tentacle, tentaclePosition, target.rotation);
                 i++;
-            } else if(loopTries < 100){
+            } else if(loopTries < 50){
                 loopTries++;
                 continue;
             } else {
