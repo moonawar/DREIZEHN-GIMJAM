@@ -12,6 +12,11 @@ public class BulletPhysics : MonoBehaviour
         {
             other.gameObject.GetComponent<Health>().DamageSelf(1);
             Destroy(gameObject);
+        } else if (other.gameObject.tag == "Tentacle" && other.gameObject.GetComponent<TentacleAttack>().isOnAttack) {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        } else if (other.gameObject.tag == "Laser" && other.gameObject.GetComponent<TentacleAttack>().isOnAttack) {
+            Destroy(gameObject);
         } else if (other.gameObject.name != "Player"){
             Destroy(gameObject);
         }

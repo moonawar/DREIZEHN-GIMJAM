@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -7550977777446676605}
   m_Layer: 7
   m_Name: TentacleAttack
-  m_TagString: Untagged
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   attackColor:
     serializedVersion: 2
     rgba: 4278190335
+  isOnAttack: 0
 --- !u!58 &-7550977777446676605
 CircleCollider2D:
   m_ObjectHideFlags: 0

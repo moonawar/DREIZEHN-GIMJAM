@@ -7,7 +7,7 @@ public class TentacleAttack : MonoBehaviour
 
     [SerializeField] Color32 warnColor, attackColor;
     float warningTime = 1f, disappearTime = 2f;
-    bool isOnAttack = false;
+    public bool isOnAttack = false;
     GameObject player;
     SpriteRenderer sprite; CircleCollider2D tentacleCollider;
     private void Awake() {

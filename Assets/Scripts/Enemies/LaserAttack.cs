@@ -7,7 +7,7 @@ public class LaserAttack : MonoBehaviour
     // Variables
     [SerializeField] Color32 warnColor, attackColor;
     float warningTime = 1f, disappearTime = 1f;
-    bool isOnAttack = false;
+    public bool isOnAttack = false;
     
     // Component
     SpriteRenderer sprite; BoxCollider2D laserCollider;

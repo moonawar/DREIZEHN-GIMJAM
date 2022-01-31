@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5516279081748763556}
   m_Layer: 0
   m_Name: LaserAttack
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   attackColor:
     serializedVersion: 2
     rgba: 4278190335
+  isOnAttack: 0
 --- !u!61 &5516279081748763556
 BoxCollider2D:
   m_ObjectHideFlags: 0
