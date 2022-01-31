@@ -76,12 +76,12 @@ public class BossAttack : MonoBehaviour
     {
         if (Time.time > nextTentacleAttack)
         {
-            Invoke("TentacleAttack", 3);
+            Invoke("TentacleAttack", 1);
             nextTentacleAttack = Time.time + tentacleAttackCooldown;
         }
         if (Time.time > nextLaserAttack)
         {
-            Invoke("LaserAttack", 4);
+            Invoke("LaserAttack", 2);
             nextLaserAttack = Time.time + laserAttackCooldown;
         }
     }
