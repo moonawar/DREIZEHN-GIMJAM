@@ -14,7 +14,10 @@ public class Lost : MonoBehaviour
 
     public void GameOver(){
         gameOver.SetActive(true);
-        wave.GetComponent<WaveSpawner>().enabled = false;
+        if (wave != null)
+        {
+            wave.GetComponent<WaveSpawner>().enabled = false;
+        }
     }
 
 }
