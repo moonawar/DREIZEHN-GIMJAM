@@ -674,6 +674,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914f05b75478df048a0d7140631d1be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &460494471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8808609622179156341, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
+  m_PrefabInstance: {fileID: 1843673412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &489063221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,6 +2775,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 103826497743136972, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: wave
+      value: 
+      objectReference: {fileID: 460494471}
+    - target: {fileID: 103826497743136972, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1186377346}
@@ -3506,7 +3515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
       propertyPath: waves.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
       propertyPath: waves.Array.data[0].rate

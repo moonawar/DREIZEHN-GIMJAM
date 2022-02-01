@@ -2879,6 +2879,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 103826497743136972, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: wave
+      value: 
+      objectReference: {fileID: 1478764442}
+    - target: {fileID: 103826497743136972, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 42995599}
@@ -3219,6 +3223,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
+--- !u!1 &1478764442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8808609622179156341, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
+  m_PrefabInstance: {fileID: 1478764441}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1706835660
 GameObject:
   m_ObjectHideFlags: 0

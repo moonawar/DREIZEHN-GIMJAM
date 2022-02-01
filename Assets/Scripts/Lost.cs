@@ -5,6 +5,7 @@ using UnityEngine;
 public class Lost : MonoBehaviour
 {
     public GameObject gameOver;
+    public GameObject wave;
 
     void Awake()
     {
@@ -13,6 +14,7 @@ public class Lost : MonoBehaviour
 
     public void GameOver(){
         gameOver.SetActive(true);
+        wave.GetComponent<WaveSpawner>().enabled = false;
     }
 
 }
