@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour {
     
@@ -27,8 +28,11 @@ public class WaveSpawner : MonoBehaviour {
 
     public SpawnState state = SpawnState.COUNTING;
 
+    public GameObject canvasObject;
+
     void Start()
     {
+        canvasObject.SetActive(false);
         if (spawnPoints.Length == 0)
         {
             Debug.LogError("No spawn points referenced.");
@@ -43,6 +47,7 @@ public class WaveSpawner : MonoBehaviour {
         {
             if (!EnemyIsAlive())
             {
+                
                 WaveCompleted();
             }
             else
@@ -69,7 +74,7 @@ public class WaveSpawner : MonoBehaviour {
     void WaveCompleted()
     {
         Debug.Log("Wave Completed!");
-
+        canvasObject.SetActive(true);
         state = SpawnState.COUNTING;
         waveCountdown = timeBetweenWaves;
 

@@ -663,30 +663,12 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &410285926 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5043699212918891480, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-  m_PrefabInstance: {fileID: 1305381723}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &410285927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410285926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 914f05b75478df048a0d7140631d1be8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOver: {fileID: 1186377346}
 --- !u!114 &410285935 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 103826497743136972, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
   m_PrefabInstance: {fileID: 1305381723}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410285926}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 914f05b75478df048a0d7140631d1be8, type: 3}
@@ -3515,11 +3497,27 @@ PrefabInstance:
       value: WaveSystem
       objectReference: {fileID: 0}
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
+      propertyPath: canvasObject
+      value: 
+      objectReference: {fileID: 120771040}
+    - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
       propertyPath: timeBetweenWaves
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
+      propertyPath: waves.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
       propertyPath: waves.Array.data[0].rate
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
+      propertyPath: waves.Array.data[1].name
+      value: Wave
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
+      propertyPath: waves.Array.data[1].rate
       value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
@@ -3536,6 +3534,14 @@ PrefabInstance:
       objectReference: {fileID: 1935776561}
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
       propertyPath: waves.Array.data[0].enemy
+      value: 
+      objectReference: {fileID: 1252271551}
+    - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
+      propertyPath: waves.Array.data[1].count
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
+      propertyPath: waves.Array.data[1].enemy
       value: 
       objectReference: {fileID: 1252271551}
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
@@ -4100,7 +4106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyCountText: {fileID: 2029039157}
-  canvasObject: {fileID: 120771040}
 --- !u!114 &2029039157
 MonoBehaviour:
   m_ObjectHideFlags: 0
