@@ -1197,7 +1197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyCountText: {fileID: 705034438}
-  canvasObject: {fileID: 1271847821}
 --- !u!114 &705034438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2025,11 +2024,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!4 &1252271553 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 99220084997233218, guid: bbfb8161e89732647af863b5aa0798c7, type: 3}
-  m_PrefabInstance: {fileID: 1252271550}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1255870563
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,6 +2356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914f05b75478df048a0d7140631d1be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOver: {fileID: 0}
 --- !u!1 &1376747181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,7 +2521,7 @@ PrefabInstance:
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
       propertyPath: waves.Array.data[0].enemy
       value: 
-      objectReference: {fileID: 1252271553}
+      objectReference: {fileID: 99220084997233218, guid: bbfb8161e89732647af863b5aa0798c7, type: 3}
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
       propertyPath: waves.Array.data[1].count
       value: 10
@@ -2534,7 +2529,7 @@ PrefabInstance:
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
       propertyPath: waves.Array.data[1].enemy
       value: 
-      objectReference: {fileID: 1252271553}
+      objectReference: {fileID: 99220084997233218, guid: bbfb8161e89732647af863b5aa0798c7, type: 3}
     - target: {fileID: 8808609622179156342, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
       propertyPath: waves.Array.data[0].count.Array.size
       value: 1
