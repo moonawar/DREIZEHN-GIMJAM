@@ -5,13 +5,20 @@ using UnityEngine;
 public class PlayerShoot : MonoBehaviour
 {
     float shootCooldown = 1.8f;
+    float explodeCooldown = 4f;
     [SerializeField] GameObject bullet;
-    Vector3 pos, bulletTranslation; Quaternion rot; float nextFireTime = 0;
+    [SerializeField] GameObject explosion;
+    Vector3 pos, bulletTranslation; Quaternion rot; float nextFireTime = 0; float nextExpTime = 0;
 
     void Shoot(){
         Instantiate(bullet, pos, rot);
     }
-    
+
+    void Boom()
+    {
+        Instantiate(explosion, pos, rot);
+    }
+
     void Update()
     {
         pos = transform.position;
@@ -22,6 +29,14 @@ public class PlayerShoot : MonoBehaviour
                 Shoot();
                 nextFireTime = Time.time + shootCooldown;
             } 
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (Time.time > nextExpTime)
+            {
+                Boom();
+                nextExpTime = Time.time + explodeCooldown;
+            }
         }
     }
 }
