@@ -12,12 +12,10 @@ public class BulletExplode : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             other.gameObject.GetComponent<Health>().DamageSelf(3);
-            Destroy(gameObject);
         }
         else if (other.gameObject.tag == "Tentacle" && other.gameObject.GetComponent<TentacleAttack>().isOnAttack)
         {
             Destroy(other.gameObject);
-            Destroy(gameObject);
         }
         else if ((other.gameObject.tag == "Laser" && other.gameObject.GetComponent<LaserAttack>().isOnAttack == false)
       || (other.gameObject.tag == "Tentacle" && other.gameObject.GetComponent<TentacleAttack>().isOnAttack == false))
@@ -26,7 +24,7 @@ public class BulletExplode : MonoBehaviour
         }
         else if (other.gameObject.name != "Player")
         {
-            Destroy(gameObject);
+           
         }
     }
     void Update()
