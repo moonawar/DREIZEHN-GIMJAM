@@ -29,10 +29,14 @@ public class LaserAttack : MonoBehaviour
     void LaunchAttack(){
         isOnAttack = true;
         sprite.color = attackColor;
-        if (laserCollider.IsTouching(player.GetComponent<CircleCollider2D>()))
+        if (player != null)
         {
-            player.GetComponent<Health>().DamageSelf(1);
+            if (laserCollider.IsTouching(player.GetComponent<CircleCollider2D>()))
+            {
+                player.GetComponent<Health>().DamageSelf(1);
+            }
         }
+
         Invoke("Disappear", disappearTime);
     }
 

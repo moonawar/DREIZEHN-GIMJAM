@@ -24,11 +24,14 @@ public class TentacleAttack : MonoBehaviour
     void LaunchAttack(){
         isOnAttack = true;
         sprite.color = attackColor;
-        if (tentacleCollider.IsTouching(player.GetComponent<CircleCollider2D>()))
+        if (player != null)
         {
-            player.GetComponent<Health>().DamageSelf(1);
+            if (tentacleCollider.IsTouching(player.GetComponent<CircleCollider2D>()))
+            {
+                player.GetComponent<Health>().DamageSelf(1);
+            }
+            Invoke("Disappear", disappearTime);            
         }
-        Invoke("Disappear", disappearTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
