@@ -35,14 +35,13 @@ public class BossAttack : MonoBehaviour
 
             if (target != null){
                 tentaclePosition = target.position + randomPosition;
-                loopTries = 0;
                 if (isOverlapping(tentaclePosition, 1.3f) == false)
                 {
                     Instantiate(tentacle, tentaclePosition, target.rotation);
                     i++;
-                } else if(loopTries < 50){
+                    loopTries = 0;
+                } else if(loopTries < 1000){
                     loopTries++;
-                    continue;
                 } else {
                     break;
                 }

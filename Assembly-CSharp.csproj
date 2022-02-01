@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\Shoot\PlayerShoot.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\EnemyCount.cs" />
+     <Compile Include="Assets\BulletExplode.cs" />
      <Compile Include="Assets\Scripts\HealthBarFollow.cs" />
      <Compile Include="Assets\Scripts\LevelScript.cs" />
      <Compile Include="Assets\Scripts\Shoot\PlayerMovement.cs" />

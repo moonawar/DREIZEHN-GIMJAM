@@ -1716,7 +1716,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyCountText: {fileID: 1239414490}
-  canvasObject: {fileID: 1674440055}
 --- !u!114 &1239414490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14215,6 +14214,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2773045527290978590, guid: b32fea1bbb833a540b1ecd14579e269d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2773045527290978591, guid: b32fea1bbb833a540b1ecd14579e269d, type: 3}
       propertyPath: m_Name
       value: Boss
