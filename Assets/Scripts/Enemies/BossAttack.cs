@@ -22,11 +22,6 @@ public class BossAttack : MonoBehaviour
     float laserAttackCooldown = 5f, nextLaserAttack, zRotation; 
 
 
-    void Awake()
-    {
-        
-    }
-
     bool isOverlapping(Vector3 spawnPoint, float collisionRadius){
         Collider2D CollisionWithEnemy = Physics2D.OverlapCircle(spawnPoint, collisionRadius, LayerMask.GetMask("Tentacle"));
         return CollisionWithEnemy;
@@ -38,18 +33,21 @@ public class BossAttack : MonoBehaviour
             randomPosition = new Vector3(Random.insideUnitCircle.x *tentacleAttackRadius, 
                                 Random.insideUnitCircle.y *tentacleAttackRadius, 0); 
 
-            tentaclePosition = target.position + randomPosition;
-            loopTries = 0;
-            if (isOverlapping(tentaclePosition, 1.3f) == false)
-            {
-                Instantiate(tentacle, tentaclePosition, target.rotation);
-                i++;
-            } else if(loopTries < 50){
-                loopTries++;
-                continue;
-            } else {
-                break;
+            if (target != null){
+                tentaclePosition = target.position + randomPosition;
+                loopTries = 0;
+                if (isOverlapping(tentaclePosition, 1.3f) == false)
+                {
+                    Instantiate(tentacle, tentaclePosition, target.rotation);
+                    i++;
+                } else if(loopTries < 50){
+                    loopTries++;
+                    continue;
+                } else {
+                    break;
+                }
             }
+            
         }
     }
 
