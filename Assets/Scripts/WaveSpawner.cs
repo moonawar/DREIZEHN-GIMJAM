@@ -74,7 +74,6 @@ public class WaveSpawner : MonoBehaviour {
     void WaveCompleted()
     {
         Debug.Log("Wave Completed!");
-        canvasObject.SetActive(true);
         state = SpawnState.COUNTING;
         waveCountdown = timeBetweenWaves;
 
@@ -82,6 +81,8 @@ public class WaveSpawner : MonoBehaviour {
         {
             nextWave = 0;
             Debug.Log("ALL WAVES COMPLETE! LOOPING...");
+            canvasObject.SetActive(true);
+            GetComponent<WaveSpawner>().enabled = false;
         }
         else
         {
