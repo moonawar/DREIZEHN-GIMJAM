@@ -27,6 +27,7 @@ public class BossAttack : MonoBehaviour
         return CollisionWithEnemy;
     }
 
+
     void TentacleAttack(){
         for (int i = 0; i < tentacleAmount;)
         {
