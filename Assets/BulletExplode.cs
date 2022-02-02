@@ -9,23 +9,32 @@ public class BulletExplode : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Enemy")
+        Collider2D[] result = new Collider2D[10];
+        Physics2D.OverlapCircle(gameObject.transform.position, 3f, new ContactFilter2D(), result);
+        foreach (Collider2D res in result)
         {
-            other.gameObject.GetComponent<Health>().DamageSelf(3);
-        }
-        else if (other.gameObject.tag == "Tentacle" && other.gameObject.GetComponent<TentacleAttack>().isOnAttack)
-        {
-            Destroy(other.gameObject);
-        }
-        else if ((other.gameObject.tag == "Laser" && other.gameObject.GetComponent<LaserAttack>().isOnAttack == false)
-      || (other.gameObject.tag == "Tentacle" && other.gameObject.GetComponent<TentacleAttack>().isOnAttack == false))
-        {
+            if (res.tag == "Enemy")
+            {
+                res.GetComponent<Health>().DamageSelf(2);
+                Destroy(gameObject);
+            }
+            else if (res.tag == "Tentacle" && res.GetComponent<TentacleAttack>().isOnAttack)
+            {
+                Destroy(res);
+                Destroy(gameObject);
+            }
+            else if ((res.tag == "Laser" && res.GetComponent<LaserAttack>().isOnAttack == false)
+          || (res.tag == "Tentacle" && res.GetComponent<TentacleAttack>().isOnAttack == false))
+            {
 
+            }
+            else if (res.name != "Player")
+            {
+                Destroy(gameObject);
+            }
         }
-        else if (other.gameObject.name != "Player")
-        {
-           
-        }
+        
+        
     }
     void Update()
     {

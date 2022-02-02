@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerShoot : MonoBehaviour
 {
     float shootCooldown = 1.8f;
-    float explodeCooldown = 4f;
+    float explodeCooldown = 3f;
     [SerializeField] GameObject bullet;
     [SerializeField] GameObject explosion;
     Vector3 pos, bulletTranslation; Quaternion rot; float nextFireTime = 0; float nextExpTime = 0;
