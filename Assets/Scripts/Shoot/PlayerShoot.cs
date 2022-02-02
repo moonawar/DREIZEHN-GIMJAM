@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerShoot : MonoBehaviour
 {
@@ -10,17 +11,26 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] GameObject explosion;
     Vector3 pos, bulletTranslation; Quaternion rot; float nextFireTime = 0; float nextExpTime = 0;
 
-    void Shoot(){
+    public Image Explosive;
+
+    public void Start()
+    {
+        Explosive.fillAmount = 1;
+    }
+    
+    public void Shoot(){
         Instantiate(bullet, pos, rot);
     }
 
-    void Boom()
+    public void Boom()
     {
         Instantiate(explosion, pos, rot);
+        Explosive.fillAmount = 0;
     }
 
-    void Update()
+    public void Update()
     {
+        Explosive.fillAmount = 1 - ((nextExpTime - Time.time)/explodeCooldown);
         pos = transform.position;
         rot = transform.rotation;   
         if (Input.GetMouseButtonDown(0)){
@@ -36,7 +46,9 @@ public class PlayerShoot : MonoBehaviour
             {
                 Boom();
                 nextExpTime = Time.time + explodeCooldown;
+                
             }
+            
         }
     }
 }
