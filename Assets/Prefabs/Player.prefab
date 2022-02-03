@@ -533,6 +533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 0}
+  wave: {fileID: 0}
 --- !u!114 &3326912462546582631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,6 +547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 3457334699767630486, guid: 6dcb5e89bebc0fb4cb42ecc83f071f98, type: 3}
+  explosion: {fileID: 3457334699767630486, guid: 7d1cb59ceb36c7446a86652272fb0bd6, type: 3}
+  Explosive: {fileID: 0}
 --- !u!50 &81482413238682986
 Rigidbody2D:
   serializedVersion: 4

@@ -44,6 +44,7 @@
      <Compile Include="Assets\Scripts\Enemies\LaserAttack.cs" />
      <Compile Include="Assets\Scripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
+     <Compile Include="Assets\CooldownIcon.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Shoot\PlayerShoot.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyAttack.cs" />
@@ -53,6 +54,11 @@
      <Compile Include="Assets\Scripts\LevelScript.cs" />
      <Compile Include="Assets\Scripts\Shoot\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Sound.cs" />
+     <Compile Include="Assets\ChangePage.cs" />
+     <Compile Include="Assets\CutsceneManager.cs" />
+     <Compile Include="Assets\Cutscene\Page.cs" />
+     <Compile Include="Assets\AudioManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

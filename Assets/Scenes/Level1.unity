@@ -663,17 +663,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &410285935 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 103826497743136972, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-  m_PrefabInstance: {fileID: 1305381723}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 914f05b75478df048a0d7140631d1be8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &460494471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8808609622179156341, guid: eaa1ea6921e7d450aabec0f70dae2b43, type: 3}
@@ -2897,10 +2886,6 @@ PrefabInstance:
       propertyPath: Explosive
       value: 
       objectReference: {fileID: 772213968}
-    - target: {fileID: 3326912462546582631, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-      propertyPath: explosion
-      value: 
-      objectReference: {fileID: 3457334699767630486, guid: 7d1cb59ceb36c7446a86652272fb0bd6, type: 3}
     - target: {fileID: 3402415573248036462, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2990,16 +2975,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-      propertyPath: lost
-      value: 
-      objectReference: {fileID: 410285935}
-    - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: scene
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-      propertyPath: isDestroyed
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: canvasObject
