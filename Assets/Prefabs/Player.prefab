@@ -518,8 +518,8 @@ MonoBehaviour:
   health: 5
   maxHealth: 5
   healthBar: {fileID: 4618358669146586796}
-  isDestroyed: 0
   lost: {fileID: 103826497743136972}
+  win: {fileID: 0}
 --- !u!114 &103826497743136972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,8 +628,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
+  m_PointLightInnerRadius: 0.47
+  m_PointLightOuterRadius: 0.87
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
