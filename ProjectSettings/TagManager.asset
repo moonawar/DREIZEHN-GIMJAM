@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Tentacle
   - Laser
+  - Boss
   layers:
   - Default
   - TransparentFX

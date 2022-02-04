@@ -6,8 +6,8 @@ public class Health : MonoBehaviour
 {
     public int health, maxHealth;
     public HealthBar healthBar;
-    public bool isDestroyed = false;
     public Lost lost;
+    public Winning win;
 
     private void Awake() {
         if (healthBar != null)
@@ -31,10 +31,17 @@ public class Health : MonoBehaviour
     {
         if (health <= 0)
         {   
-            if (gameObject.tag == "Player"){
+            if (gameObject.tag == "Player")
+            {
                 lost.GameOver();
                 Destroy(gameObject);
-            } else {
+            } 
+            else if (gameObject.tag == "Boss")
+            {
+                win.Update();
+            }
+            else 
+            {
                 Debug.Log("Died");
                 Destroy(gameObject);
             }
