@@ -7,7 +7,7 @@ public class Health : MonoBehaviour
     float healCooldown = 12f;
     float nextHealTime = 0;
     public int health, maxHealth, heal;
-    public HealthBar healthBar;
+    public HealthBar healthBar; public HeartBar heartBar;
     public Lost lost;
     public Winning win;
 
@@ -25,8 +25,11 @@ public class Health : MonoBehaviour
         {
             healthBar.SetCurrentHealth(health);
         }
+        if (heartBar != null)
+        {
+            heartBar.SetHeartBarDown(health);
+        }
         
-        Debug.Log(gameObject.name + " HP is now " + health);
     }
 
     public void Heal(){
@@ -35,8 +38,11 @@ public class Health : MonoBehaviour
         {
             healthBar.SetCurrentHealth(health);
         }
+        if (heartBar != null)
+        {
+            heartBar.SetHeartBarUp(health);
+        }
         
-        Debug.Log(gameObject.name + " HP is now " + health);
     }
 
     public void Update()

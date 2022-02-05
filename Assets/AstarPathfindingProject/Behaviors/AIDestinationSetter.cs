@@ -21,7 +21,13 @@ namespace Pathfinding {
 		protected override void Awake() {
 			if (target == null)
 			{
-				target = GameObject.FindWithTag("Player").transform;
+				if (GameObject.FindWithTag("Player") != null)
+				{
+					target = GameObject.FindWithTag("Player").transform;
+				} else {
+					target = transform;
+				}
+				
 			}
 		}
 		void OnEnable () {

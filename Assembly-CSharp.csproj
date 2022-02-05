@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\LevelScript.cs" />
      <Compile Include="Assets\Scripts\Shoot\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\HeartBar.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
