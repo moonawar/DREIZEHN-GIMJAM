@@ -11,10 +11,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{FDA36823-7A9F-E408-8F58-578BAB809805}</ProjectGuid>
+    <ProjectGuid>{3AD936C8-58D1-C0C3-079B-D477DF549EAC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>PackageToolsEditor</AssemblyName>
+    <AssemblyName>Unity.Services.Core.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -47,10 +47,96 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AstarPathfindingProject\PackageTools\Editor\EditorGUIx.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\PackageTools\Editor\EditorBase.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\PackageTools\Editor\EnumFlagDrawer.cs" />
-     <None Include="Assets\AstarPathfindingProject\PackageTools\Editor\PackageToolsEditor.asmdef" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\ServiceActivationPopupVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ProjectStateManagement\ProjectStateRequest.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ProjectStateManagement\ServiceFlagRequest.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\Networking\HttpRequestExtensions.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\Networking\HttpServiceConfig.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\AsyncOperation\IAsyncOperation.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\ProjectBindVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\InsufficientPermissionVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\EditorGameServiceRegistry.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\Networking\ReadOnlyHttpRequest.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\Networking\ReadOnlyHttpResponse.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ProjectStateManagement\ProjectStateHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\ServiceInstallationListener.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\EditorGameServiceFlagEnabler.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\IProjectEditorDrawerFactory.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\VisualElementHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\BackendHelpers\JsonHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ProjectStateManagement\IProjectStateHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\UserRequestVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UserRoleManagement\UserRole.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\SettingsCommonHeaderUiHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ProjectStateManagement\ServiceFlags.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\SliderToggleUiHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\EditorGameServiceSettingsProvider.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\IEditorGameServiceIdentifier.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\IEditorGameService.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\LoggedOutUiHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\Utils\MiniJson.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ProjectStateManagement\IServiceFlags.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\Analytics\EditorGameServiceAnalyticsSender.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ProjectStateManagement\ProjectState.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\PlatformSupportUiHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\Networking\HttpRequest.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\Networking\IHttpClient.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ProjectStateManagement\IServiceFlagRequest.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\ExceptionVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UserRoleManagement\IUserRoleHandler.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\ServiceFlagEndpoint.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ProjectStateManagement\IProjectStateRequest.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\AsyncOperation\AsyncOperation.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\ExceptionHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UserRoleManagement\IUserRoleRequest.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\AsyncOperation\AsyncOperationAwaiter.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\IEditorGameServiceEnabler.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\AsyncOperation\AsyncOperationStatus.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\ServiceActivationPopupWindow.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\AsyncOperation\AsyncOperationExtensions.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UserRoleManagement\UserRoleHandler.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\OfflineUiHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\Networking\HttpResponse.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\ProjectBindAndUserRequestVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\LoggedOutVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\DefaultCdnConfiguredEndpoint.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\AccessTokenErrorUiHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\EditorGameServiceDashboardHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\AsyncOperation\IAsyncOperationAwaiter.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\Networking\UnityWebRequestClient.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\UserRoleRequestUiHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\UserRoleManagement\UserRoleRequest.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\IEditorGameServiceRegistry.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\BackendHelpers\UnityWebRequestHelper.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\IActivationPopupVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\ServiceActivationConfirmationVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\CoppaVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\Networking\HttpOptions.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\OfflineVisual.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\AssemblyInfo.cs" />
+     <Compile Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\EditorGameServiceRemoteConfiguration.cs" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\UXML\ExceptionVisual.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\UXML\CoppaCompliance.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\UXML\EndConfirmation.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\UXML\ProjectBind.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\USS\PlatformSupportVisualDark.uss" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\USS\PlatformSupportVisualLight.uss" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\UXML\PleaseWait.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\UXML\ProjectSettingsCommonHeader.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\USS\SliderToggleCommon.uss" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\USS\PlatformSupportVisualCommon.uss" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\USS\ServiceActivationWindow.uss" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\USS\ServicesProjectSettingsCommon.uss" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\UXML\AccessTokenError.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\USS\ServicesProjectSettingsLight.uss" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\Unity.Services.Core.Editor.asmdef" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\UXML\InsufficientPermission.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\EditorGameService\USS\ServicesProjectSettingsDark.uss" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\UXML\LoggedOut.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\UXML\PlatformSupportVisual.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\UXML\ProjectBindingAndUserRequest.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\ServiceActivationPopup\Visuals\UXML\General.uxml" />
+     <None Include="Packages\com.unity.services.core\Editor\Core\UiHelpers\UXML\Offline.uxml" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -651,23 +737,26 @@
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>/Users/marchelinefannihp/Documents/GitHub/DREIZEHN-GIMJAM/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/Users/marchelinefannihp/Documents/GitHub/DREIZEHN-GIMJAM/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Users/marchelinefannihp/Documents/GitHub/DREIZEHN-GIMJAM/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.TestRunner">
- <HintPath>/Users/marchelinefannihp/Documents/GitHub/DREIZEHN-GIMJAM/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="AstarPathfindingProject.csproj">
-      <Project>{D2D4BE6E-4241-38A6-0468-553C11463B14}</Project>
-      <Name>AstarPathfindingProject</Name>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{550AD92B-F3C2-6991-D247-721B1E0E7CF5}</Project>
+      <Name>UnityEditor.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{71A39C2C-66F5-35DF-D7ED-A7F7502DBEB7}</Project>
+      <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{39349D06-E871-D67A-64F3-1F84B2C0522E}</Project>
+      <Name>UnityEngine.TestRunner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{8FA14F20-0D06-3784-DEFF-90D93AB9100C}</Project>
+      <Name>UnityEditor.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

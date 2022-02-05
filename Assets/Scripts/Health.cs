@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int health, maxHealth;
+    float healCooldown = 12f;
+    float nextHealTime = 0;
+    public int health, maxHealth, heal;
     public HealthBar healthBar;
     public Lost lost;
     public Winning win;
@@ -19,6 +21,16 @@ public class Health : MonoBehaviour
 
     public void DamageSelf(int damage){
         health = health - damage;
+        if (healthBar != null)
+        {
+            healthBar.SetCurrentHealth(health);
+        }
+        
+        Debug.Log(gameObject.name + " HP is now " + health);
+    }
+
+    public void Heal(){
+        health = health + heal;
         if (healthBar != null)
         {
             healthBar.SetCurrentHealth(health);
@@ -44,6 +56,18 @@ public class Health : MonoBehaviour
             {
                 Debug.Log("Died");
                 Destroy(gameObject);
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (Time.time > nextHealTime)
+            {
+                if (health <= 4)
+                {
+                    Heal();
+                    nextHealTime = Time.time + healCooldown;
+                }
             }
         }
     }
