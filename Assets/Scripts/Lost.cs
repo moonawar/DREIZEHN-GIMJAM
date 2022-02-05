@@ -6,6 +6,7 @@ public class Lost : MonoBehaviour
 {
     public GameObject gameOver;
     public GameObject wave;
+    public BossAttack bossAttack;
 
     void Awake()
     {
@@ -14,9 +15,13 @@ public class Lost : MonoBehaviour
 
     public void GameOver(){
         gameOver.SetActive(true);
+        
         if (wave != null)
         {
             wave.GetComponent<WaveSpawner>().enabled = false;
+        }
+        if (bossAttack != null) {
+            bossAttack.enabled = false;
         }
     }
 

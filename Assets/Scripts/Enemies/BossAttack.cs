@@ -46,7 +46,7 @@ public class BossAttack : MonoBehaviour
                 } else {
                     break;
                 }
-            }
+            } else {break;}
             
         }
     }
