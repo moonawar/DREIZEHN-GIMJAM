@@ -8,4 +8,5 @@ public class Page
 
     [TextArea(5,10)]
     public string storyText;
+    public string nextMusic;
 }

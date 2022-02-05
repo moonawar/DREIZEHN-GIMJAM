@@ -32,6 +32,12 @@ public class CutsceneManager : MonoBehaviour
             currentPage ++;
             pagePanel.sprite = pages[currentPage].pageImage; 
             TMP.text = pages[currentPage].storyText;
+
+            if (pages[currentPage].nextMusic != null)
+            {
+                FindObjectOfType<AudioManager>().ChangeMusicTo(pages[currentPage].nextMusic, 1);
+            }
+
         } else {
             SceneManager.LoadScene(nextScene);
         }

@@ -458,6 +458,7 @@ GameObject:
   m_Component:
   - component: {fileID: 465619041}
   - component: {fileID: 465619042}
+  - component: {fileID: 465619043}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -498,18 +499,47 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
+    nextMusic: 
   - name: ElenaReflection2
     clip: {fileID: 8300000, guid: 164ae700c1d2668489d045014b26579f, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
     loop: 1
+    nextMusic: 
   - name: ElenaReflection3
     clip: {fileID: 8300000, guid: b26269dfad9b3244c8b2b05e6f0ff9e9, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
     loop: 1
+    nextMusic: 
+  - name: FinalHallOpen
+    clip: {fileID: 8300000, guid: 0570bf1d00a5564458ff6fe51a8fece3, type: 3}
+    volume: 0.863
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    nextMusic: FinalHall1
+  - name: FinalHall1
+    clip: {fileID: 8300000, guid: e05113aadba692d4695e6122b74365b9, type: 3}
+    volume: 0.863
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+    nextMusic: 
+--- !u!114 &465619043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465619040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956656f165225484b9c5ffde2df84aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &476802162
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +553,7 @@ GameObject:
   - component: {fileID: 476802163}
   - component: {fileID: 476802166}
   - component: {fileID: 476802167}
+  - component: {fileID: 476802168}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -704,6 +735,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds: []
+--- !u!114 &476802168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476802162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1121479383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,8 +1089,10 @@ MonoBehaviour:
       memory upon seeing the strange book.
 
 '
+    nextMusic: 
   - pageImage: {fileID: 21300000, guid: 9208d012d90cd5843ac7f47b13988e43, type: 3}
     storyText: ...
+    nextMusic: FinalHallOpen
   pagePanel: {fileID: 347612375}
   TMP: {fileID: 89473093}
   nextScene: Level3

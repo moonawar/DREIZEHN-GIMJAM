@@ -13,4 +13,5 @@ public class Sound
     [HideInInspector]
     public AudioSource source;
     public bool loop;
+    public string nextMusic;
 }
