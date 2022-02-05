@@ -40,6 +40,7 @@
      <Compile Include="Assets\Scripts\Lost.cs" />
      <Compile Include="Assets\Scripts\Enemies\TentacleAttack.cs" />
      <Compile Include="Assets\Scripts\Enemies\BossAttack.cs" />
+     <Compile Include="Assets\Winning3.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Shoot\BulletPhysics.cs" />
      <Compile Include="Assets\Scripts\Enemies\LaserAttack.cs" />
@@ -53,15 +54,15 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Shoot\PlayerShoot.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyAttack.cs" />
+     <Compile Include="Assets\Scripts\Winning.cs" />
      <Compile Include="Assets\Scripts\EnemyCount.cs" />
+     <Compile Include="Assets\Win.cs" />
      <Compile Include="Assets\BulletExplode.cs" />
      <Compile Include="Assets\Scripts\HealthBarFollow.cs" />
      <Compile Include="Assets\Scripts\LevelScript.cs" />
      <Compile Include="Assets\Scripts\Shoot\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
-     <Compile Include="Assets\Scripts\Winning.cs" />
-     <Compile Include="Assets\Win.cs" />
-     <Compile Include="Assets\Winning3.cs" />
+     <Compile Include="Assets\StageManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
