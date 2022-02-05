@@ -669,18 +669,6 @@
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>/Users/marchelinefannihp/Documents/GitHub/DREIZEHN-GIMJAM/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/Users/marchelinefannihp/Documents/GitHub/DREIZEHN-GIMJAM/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Users/marchelinefannihp/Documents/GitHub/DREIZEHN-GIMJAM/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.TestRunner">
- <HintPath>/Users/marchelinefannihp/Documents/GitHub/DREIZEHN-GIMJAM/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AstarPathfindingProject.csproj">
@@ -691,6 +679,26 @@
     <ProjectReference Include="PackageToolsEditor.csproj">
       <Project>{FDA36823-7A9F-E408-8F58-578BAB809805}</Project>
       <Name>PackageToolsEditor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{550AD92B-F3C2-6991-D247-721B1E0E7CF5}</Project>
+      <Name>UnityEditor.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{71A39C2C-66F5-35DF-D7ED-A7F7502DBEB7}</Project>
+      <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{39349D06-E871-D67A-64F3-1F84B2C0522E}</Project>
+      <Name>UnityEngine.TestRunner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{8FA14F20-0D06-3784-DEFF-90D93AB9100C}</Project>
+      <Name>UnityEditor.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

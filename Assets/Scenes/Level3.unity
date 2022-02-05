@@ -3283,7 +3283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: heal
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: lost

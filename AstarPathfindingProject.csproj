@@ -760,14 +760,18 @@
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>/Users/marchelinefannihp/Documents/GitHub/DREIZEHN-GIMJAM/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/Users/marchelinefannihp/Documents/GitHub/DREIZEHN-GIMJAM/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{550AD92B-F3C2-6991-D247-721B1E0E7CF5}</Project>
+      <Name>UnityEditor.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{71A39C2C-66F5-35DF-D7ED-A7F7502DBEB7}</Project>
+      <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
