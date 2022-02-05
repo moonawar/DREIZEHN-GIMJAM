@@ -61,8 +61,6 @@ public class BossAttack : MonoBehaviour
         zRotation = (Mathf.Asin(pointDistance/19f)* 360/ 3.14f);
 
         laserRotation = Quaternion.Euler(new Vector3(0f, 0f, zRotation));
-
-        Debug.Log("2");
         GameObject laserObj = Instantiate(laser, laserPosition, laserRotation);
     }
     void LaserAttack(){
