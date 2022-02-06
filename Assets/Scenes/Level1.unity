@@ -3051,6 +3051,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1107914095}
+    - target: {fileID: 357540868235459802, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: playerMove
+      value: 
+      objectReference: {fileID: 1917327077}
     - target: {fileID: 509317740766981738, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3099,6 +3103,10 @@ PrefabInstance:
       propertyPath: Torch
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: lookDir
+      value: 
+      objectReference: {fileID: 1305381725}
     - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: rbTorch
       value: 
@@ -3224,6 +3232,11 @@ PrefabInstance:
 --- !u!4 &1305381724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5043699212918891482, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+  m_PrefabInstance: {fileID: 1305381723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1305381725 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 509317740766981738, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
   m_PrefabInstance: {fileID: 1305381723}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1529892637
@@ -7719,6 +7732,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1917327077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+  m_PrefabInstance: {fileID: 1305381723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917327074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b41b0d979f1f9f44867139760dd1cb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &1917327078 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 81482413238682986, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
