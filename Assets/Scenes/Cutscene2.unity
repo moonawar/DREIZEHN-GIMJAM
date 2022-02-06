@@ -498,18 +498,21 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
+    nextMusic: 
   - name: ElenaReflection2
     clip: {fileID: 8300000, guid: 164ae700c1d2668489d045014b26579f, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
     loop: 1
+    nextMusic: 
   - name: ElenaReflection3
     clip: {fileID: 8300000, guid: b26269dfad9b3244c8b2b05e6f0ff9e9, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
     loop: 1
+    nextMusic: 
 --- !u!1 &476802162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,12 +1023,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickAllowed: 0
   pages:
-  - pageImage: {fileID: 21300000, guid: 9da0ee4ab96818b4eaac9770d209e0ab, type: 3}
+  - pageImage: {fileID: 21300000, guid: 9f38fb8f1bd8aa34f8422d843c926f06, type: 3}
     storyText: 'The girl lost her memory, but she knows she can heal wounds and hear
       the Call of Cthulhu. She then shows Elena the cemetery, where the monsters
       are hiding.
 
 '
+    nextMusic: None
   pagePanel: {fileID: 347612375}
   TMP: {fileID: 89473093}
   nextScene: Level2

@@ -498,6 +498,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
+    nextMusic: 
 --- !u!1 &476802162
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +512,7 @@ GameObject:
   - component: {fileID: 476802163}
   - component: {fileID: 476802166}
   - component: {fileID: 476802167}
+  - component: {fileID: 476802168}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -692,6 +694,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds: []
+--- !u!114 &476802168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476802162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1121479383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,18 +1043,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickAllowed: 0
   pages:
-  - pageImage: {fileID: 21300000, guid: ef6c5c904abe16d429c9857ff7ec8a3f, type: 3}
+  - pageImage: {fileID: 21300000, guid: 5d906f37badd641498aacada6401fc49, type: 3}
     storyText: 'Hundreds of Eldritch Entities invade the entire world. They have
       torn down the fabric of the Multiverse. '
-  - pageImage: {fileID: 21300000, guid: 2e7474b48fc093343a450170fe52b871, type: 3}
+    nextMusic: None
+  - pageImage: {fileID: 21300000, guid: 9920d781d8075da479c2e256935f4ef1, type: 3}
     storyText: 'In the face of catastrophic extinction towards humanity, Sister Elena
       swears by the name of God to eradicate unknown evil until dimmed the lights
       upon her life.
 
 '
-  - pageImage: {fileID: 21300000, guid: 3b970aff254c85c4c879e01a88ae4c59, type: 3}
+    nextMusic: None
+  - pageImage: {fileID: 21300000, guid: c65db2a2fd3ba804eb35dbd91427e330, type: 3}
     storyText: "As time passes on, in a havoc-befallen village, Elena laid her eyes
       upon a beauty under the ruins waiting for someone to end her misery.\_\r\n"
+    nextMusic: None
   pagePanel: {fileID: 347612375}
   TMP: {fileID: 89473093}
   nextScene: Level1
