@@ -1221,6 +1221,7 @@ GameObject:
   - component: {fileID: 952901372}
   - component: {fileID: 952901374}
   - component: {fileID: 952901376}
+  - component: {fileID: 952901373}
   m_Layer: 0
   m_Name: Torch Light 2D
   m_TagString: Untagged
@@ -1283,6 +1284,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &952901373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952901370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5708d7ecc2b07ed4a9b721843c79e900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  cam: {fileID: 1107914095}
+  rb: {fileID: 952901374}
+  Player: {fileID: 1917327074}
 --- !u!50 &952901374
 Rigidbody2D:
   serializedVersion: 4
