@@ -613,6 +613,7 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 81482413238682986}
   animator: {fileID: 3516426301702332009}
+  cam: {fileID: 0}
   pos: {x: 0, y: 0}
 --- !u!95 &3516426301702332009
 Animator:
@@ -1070,6 +1071,8 @@ MonoBehaviour:
   cam: {fileID: 0}
   rb: {fileID: 1470562202959747921}
   target: {fileID: 5043699212918891482}
+  angle: 0
+  playerMove: {fileID: 3934376070037515821}
 --- !u!1 &8960641931418081662
 GameObject:
   m_ObjectHideFlags: 0

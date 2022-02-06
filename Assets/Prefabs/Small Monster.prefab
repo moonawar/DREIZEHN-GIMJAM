@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6501696756826527187}
   - component: {fileID: -898673117504368628}
   - component: {fileID: 7328563361756638179}
+  - component: {fileID: 6044378809805165753}
   m_Layer: 0
   m_Name: Small Monster
   m_TagString: Enemy
@@ -191,6 +192,22 @@ CircleCollider2D:
   m_Offset: {x: -0.01181509, y: 0.6524259}
   serializedVersion: 2
   m_Radius: 0.7964367
+--- !u!58 &6044378809805165753
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251394401543335705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.86}
+  serializedVersion: 2
+  m_Radius: 0.83
 --- !u!1 &6282702195266251567
 GameObject:
   m_ObjectHideFlags: 0

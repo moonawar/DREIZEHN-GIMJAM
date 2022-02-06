@@ -3180,12 +3180,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5043699212918891483, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: m_Size.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5043699212918891483, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: m_Size.y
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5043699212918891483, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5043699212918891483, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5043699212918891483, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5043699212918891483, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_Materials.Array.data[0]
