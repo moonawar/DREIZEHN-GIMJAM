@@ -14,7 +14,7 @@ public class BulletExplode : MonoBehaviour
         foreach (Collider2D res in result)
         {
             if (res != null){
-                if (res.tag == "Enemy")
+                if (res.tag == "Enemy" || res.tag == "Boss")
             {
                 res.GetComponent<Health>().DamageSelf(2);
                 Destroy(gameObject);
