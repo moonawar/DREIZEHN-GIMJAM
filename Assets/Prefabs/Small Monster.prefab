@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 99220084997233218}
-  - component: {fileID: 1200200136689674447}
   - component: {fileID: -4887414736530928561}
   - component: {fileID: 6773634051548290846}
   - component: {fileID: 1755094618968826486}
@@ -39,22 +38,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1200200136689674447
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3251394401543335705}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.011635067, y: 0.44525275}
-  serializedVersion: 2
-  m_Radius: 0.76726735
 --- !u!114 &-4887414736530928561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +57,7 @@ MonoBehaviour:
   heartBar: {fileID: 0}
   lost: {fileID: 0}
   win: {fileID: 0}
+  Healing: {fileID: 0}
 --- !u!114 &6773634051548290846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,9 +188,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011635103, y: 1.6449459}
+  m_Offset: {x: -0.01181509, y: 0.6524259}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 0.7964367
 --- !u!1 &6282702195266251567
 GameObject:
   m_ObjectHideFlags: 0

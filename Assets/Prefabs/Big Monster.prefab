@@ -175,6 +175,7 @@ MonoBehaviour:
   heartBar: {fileID: 0}
   lost: {fileID: 0}
   win: {fileID: 0}
+  Healing: {fileID: 0}
 --- !u!114 &4513271094244161043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,9 +273,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.025276668, y: 0.89784837}
+  m_Offset: {x: 0.20706274, y: 0.5721218}
   serializedVersion: 2
-  m_Radius: 3.5
+  m_Radius: 1.5282103
 --- !u!50 &3564059716996659971
 Rigidbody2D:
   serializedVersion: 4
