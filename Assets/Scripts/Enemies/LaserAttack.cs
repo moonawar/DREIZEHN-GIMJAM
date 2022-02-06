@@ -14,11 +14,13 @@ public class LaserAttack : MonoBehaviour
 
     // References
     GameObject player;
+    public SpriteRenderer graphic;
     void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
         laserCollider = GetComponent<BoxCollider2D>();
         player = GameObject.FindWithTag("Player");
+        graphic.enabled = false;
         Invoke("LaunchAttack", warningTime);
     }
 
@@ -28,6 +30,7 @@ public class LaserAttack : MonoBehaviour
 
     void LaunchAttack(){
         isOnAttack = true;
+        graphic.enabled = true;
         sprite.color = attackColor;
         if (player != null)
         {
