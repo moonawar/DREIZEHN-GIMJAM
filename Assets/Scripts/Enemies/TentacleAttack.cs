@@ -26,7 +26,7 @@ public class TentacleAttack : MonoBehaviour
         sprite.color = attackColor;
         if (player != null)
         {
-            if (tentacleCollider.IsTouching(player.GetComponent<CircleCollider2D>()))
+            if (tentacleCollider.IsTouching(player.GetComponent<BoxCollider2D>()))
             {
                 player.GetComponent<Health>().DamageSelf(1);
             }

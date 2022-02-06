@@ -31,7 +31,7 @@ public class LaserAttack : MonoBehaviour
         sprite.color = attackColor;
         if (player != null)
         {
-            if (laserCollider.IsTouching(player.GetComponent<CircleCollider2D>()))
+            if (laserCollider.IsTouching(player.GetComponent<BoxCollider2D>()))
             {
                 player.GetComponent<Health>().DamageSelf(1);
             }
