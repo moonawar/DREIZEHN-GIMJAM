@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8874733065610656351
+--- !u!1 &5870212340808224881
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8874733065610656348}
-  - component: {fileID: 8874733065610656349}
-  - component: {fileID: 4135697500792925175}
-  - component: {fileID: 4513271094244161043}
-  - component: {fileID: 3063466574405181800}
-  - component: {fileID: 7653439628919027142}
-  - component: {fileID: 4981802681230838976}
-  - component: {fileID: 3564059716996659971}
-  - component: {fileID: 6561645708888673664}
-  - component: {fileID: 6609886428664948468}
-  - component: {fileID: 6139241357626081992}
+  - component: {fileID: 7814490569135057217}
+  - component: {fileID: 4686660598356607226}
+  - component: {fileID: 1627276067571036979}
+  - component: {fileID: 5729963437794316698}
   m_Layer: 0
-  m_Name: Big Monster
-  m_TagString: Enemy
+  m_Name: Graphic
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8874733065610656348
+--- !u!4 &7814490569135057217
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8874733065610656351}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.43, y: 3.16, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 0}
+  m_GameObject: {fileID: 5870212340808224881}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.02, y: -0.33, z: -17.259182}
+  m_LocalScale: {x: 0.9300314, y: 0.9300314, z: 1.1625394}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 8874733065610656348}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8874733065610656349
+--- !u!114 &4686660598356607226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870212340808224881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc0e9169ceec5245afd0f9dd23de96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentTransform: {fileID: 8874733065610656348}
+--- !u!212 &1627276067571036979
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8874733065610656351}
+  m_GameObject: {fileID: 5870212340808224881}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -91,6 +97,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5729963437794316698
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870212340808224881}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d98b16f00276d34cbd2cb8495ef3569, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &8874733065610656351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8874733065610656348}
+  - component: {fileID: 4135697500792925175}
+  - component: {fileID: 4513271094244161043}
+  - component: {fileID: 3063466574405181800}
+  - component: {fileID: 7653439628919027142}
+  - component: {fileID: 4981802681230838976}
+  - component: {fileID: 3564059716996659971}
+  - component: {fileID: 6561645708888673664}
+  - component: {fileID: 6609886428664948468}
+  - component: {fileID: 6139241357626081992}
+  m_Layer: 0
+  m_Name: Big Monster
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8874733065610656348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8874733065610656351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.43, y: 3.16, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0}
+  m_Children:
+  - {fileID: 7814490569135057217}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4135697500792925175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,9 +272,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.025276668, y: 0.89784837}
   serializedVersion: 2
-  m_Radius: 3.3
+  m_Radius: 1.0497597
 --- !u!50 &3564059716996659971
 Rigidbody2D:
   serializedVersion: 4

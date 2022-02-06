@@ -60,7 +60,6 @@ public class Health : MonoBehaviour
             }
             else 
             {
-                Debug.Log("Died");
                 Destroy(gameObject);
             }
         }
