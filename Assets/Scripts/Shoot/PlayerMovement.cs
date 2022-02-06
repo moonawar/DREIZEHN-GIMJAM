@@ -15,14 +15,30 @@ public class PlayerMovement : MonoBehaviour
     public void Update()
     {
         pos.x = Input.GetAxisRaw("Horizontal");
-        if (Input.GetAxisRaw("Horizontal")>0)
+        
+        pos.y = Input.GetAxisRaw("Vertical");
+        if (Input.GetAxisRaw("Horizontal") > 0)
         {
             animator.SetBool("Kanan", true);
         }
-        pos.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetAxisRaw("Horizontal") < 0)
+        else if (Input.GetAxisRaw("Horizontal") < 0)
         {
             animator.SetBool("Kiri", true);
+        }
+        else if (Input.GetAxisRaw("Vertical") < 0)
+        {
+            animator.SetBool("Depan", true);
+        }
+        else if (Input.GetAxisRaw("Vertical") > 0)
+        {
+            animator.SetBool("Belakang", true);
+        }
+        else
+        {
+            animator.SetBool("Belakang", false);
+            animator.SetBool("Depan", true);
+            animator.SetBool("Kanan", false);
+            animator.SetBool("Kiri", false);
         }
     }
 

@@ -1237,11 +1237,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952901370}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.020000001, y: 0.42, z: 0}
-  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.8333333}
+  m_LocalPosition: {x: 0.020000882, y: 0.4200007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1305381724}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &952901372
 MonoBehaviour:
@@ -1299,7 +1299,7 @@ MonoBehaviour:
   moveSpeed: 5
   cam: {fileID: 1107914095}
   rb: {fileID: 952901374}
-  Player: {fileID: 1917327074}
+  target: {fileID: 1305381724}
 --- !u!50 &952901374
 Rigidbody2D:
   serializedVersion: 4
@@ -3085,7 +3085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6549742979394291229, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7265272074709665854, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_PointLightInnerAngle
