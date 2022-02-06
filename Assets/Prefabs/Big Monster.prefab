@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3564059716996659971}
   - component: {fileID: 6561645708888673664}
   - component: {fileID: 6609886428664948468}
+  - component: {fileID: 6139241357626081992}
   m_Layer: 0
   m_Name: Big Monster
   m_TagString: Enemy
@@ -34,7 +35,7 @@ Transform:
   m_GameObject: {fileID: 8874733065610656351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.43, y: 3.16, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.2}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -79,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.6981132, g: 0.2799039, b: 0.2799039, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6f93dd8db20d8b14fa7c056242061d95, type: 3}
+  m_Color: {r: 0.7843138, g: 0.7843138, b: 0.7843138, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -104,9 +105,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   maxHealth: 3
+  heal: 0
   healthBar: {fileID: 0}
-  isDestroyed: 0
+  heartBar: {fileID: 0}
   lost: {fileID: 0}
+  win: {fileID: 0}
 --- !u!114 &4513271094244161043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,3 +284,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!95 &6139241357626081992
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8874733065610656351}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d98b16f00276d34cbd2cb8495ef3569, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6220646627724072178}
   - component: {fileID: 7555594372475126837}
   - component: {fileID: 8734060702087718368}
+  - component: {fileID: -1657113360444056638}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Enemy
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2773045527290978591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.35, y: 7.89, z: 0}
-  m_LocalScale: {x: 6.2025924, y: 3.6028192, z: 5.221477}
+  m_LocalScale: {x: 0.33, y: 0.23, z: 5.221477}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db6c1ca3519342642993c56bc733d3b1, type: 3}
   m_Color: {r: 0.7264151, g: 0.37083626, b: 0.2021627, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -141,9 +142,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 35
   maxHealth: 35
+  heal: 0
   healthBar: {fileID: 0}
-  isDestroyed: 0
+  heartBar: {fileID: 0}
   lost: {fileID: 0}
+  win: {fileID: 0}
 --- !u!114 &7555594372475126837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,8 +161,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   tentacle: {fileID: 614024874796104726, guid: 8162bffceb095ab4482c3bb8333e6676, type: 3}
-  tentacleAttackRadius: 4
-  tentacleAttackCooldown: 3
   laser: {fileID: 6609690374021699426, guid: 813f72ffe681a0b44a2a0f5bdf18ef36, type: 3}
 --- !u!70 &8734060702087718368
 CapsuleCollider2D:
@@ -177,3 +178,22 @@ CapsuleCollider2D:
   m_Offset: {x: 5.0079657e-10, y: 0.007232394}
   m_Size: {x: 0.97000045, y: 0.7355094}
   m_Direction: 1
+--- !u!95 &-1657113360444056638
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2773045527290978591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f8e37086f00d404e9d3a66027475eab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

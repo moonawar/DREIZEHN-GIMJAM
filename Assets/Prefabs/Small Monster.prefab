@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7249284123374530367}
   - component: {fileID: 6501696756826527187}
   - component: {fileID: -898673117504368628}
+  - component: {fileID: -6907008889902321082}
   m_Layer: 0
   m_Name: Small Monster
   m_TagString: Enemy
@@ -33,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 3251394401543335705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.55, y: -0.02, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -78,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.69803923, g: 0.41056105, b: 0.2784314, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 16de92a4c960bc94f9dd6bce1fe5bdbd, type: 3}
+  m_Color: {r: 0.7843138, g: 0.7843138, b: 0.7843138, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -119,9 +120,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   maxHealth: 1
+  heal: 0
   healthBar: {fileID: 0}
-  isDestroyed: 0
+  heartBar: {fileID: 0}
   lost: {fileID: 0}
+  win: {fileID: 0}
 --- !u!114 &6773634051548290846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,3 +242,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed35cb5948002b4f870a2a30bd496db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &-6907008889902321082
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251394401543335705}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 507d1587f93f7664dbddba30b7b0a9dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
