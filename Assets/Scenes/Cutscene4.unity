@@ -530,7 +530,7 @@ MonoBehaviour:
     nextMusic: 
   - name: SheandPromises
     clip: {fileID: 8300000, guid: 82e16ae6898e2354f8087acfccc4b451, type: 3}
-    volume: 0.61
+    volume: 0.37
     pitch: 1
     source: {fileID: 0}
     loop: 1
