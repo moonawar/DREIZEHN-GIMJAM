@@ -1219,9 +1219,8 @@ GameObject:
   m_Component:
   - component: {fileID: 952901371}
   - component: {fileID: 952901372}
-  - component: {fileID: 952901373}
   - component: {fileID: 952901374}
-  - component: {fileID: 952901375}
+  - component: {fileID: 952901376}
   m_Layer: 0
   m_Name: Torch Light 2D
   m_TagString: Untagged
@@ -1284,22 +1283,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &952901373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952901370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5708d7ecc2b07ed4a9b721843c79e900, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  cam: {fileID: 1107914095}
-  rb: {fileID: 952901374}
-  Player: {fileID: 1917327074}
 --- !u!50 &952901374
 Rigidbody2D:
   serializedVersion: 4
@@ -1321,21 +1304,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &952901375
-MonoBehaviour:
+--- !u!58 &952901376
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952901370}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22fddb8e9a0bab142954362945ff012e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 3457334699767630486, guid: 6dcb5e89bebc0fb4cb42ecc83f071f98, type: 3}
-  explosion: {fileID: 3457334699767630486, guid: 7d1cb59ceb36c7446a86652272fb0bd6, type: 3}
-  Explosive: {fileID: 1735552617}
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 7
 --- !u!1 &1010613773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,9 +2967,25 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1917327078}
+    - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 1107914095}
+    - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: Torch
+      value: 
+      objectReference: {fileID: 952901370}
+    - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: rbTorch
+      value: 
+      objectReference: {fileID: 952901374}
+    - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1917327075}
     - target: {fileID: 5043699212918891480, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3098,8 +3098,7 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3326912462546582631, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
 --- !u!4 &1305381724 stripped
 Transform:
@@ -6886,17 +6885,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1735552617 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7283478417221022255, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
-  m_PrefabInstance: {fileID: 1305381723}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1763012449
 GameObject:
   m_ObjectHideFlags: 0
@@ -7601,6 +7589,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &1917327078 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 81482413238682986, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+  m_PrefabInstance: {fileID: 1305381723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1935776560
 PrefabInstance:
   m_ObjectHideFlags: 0

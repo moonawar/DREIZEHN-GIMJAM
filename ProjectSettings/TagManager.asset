@@ -9,6 +9,7 @@ TagManager:
   - Tentacle
   - Laser
   - Boss
+  - Torch
   layers:
   - Default
   - TransparentFX
