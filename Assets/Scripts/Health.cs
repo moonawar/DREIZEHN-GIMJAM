@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
@@ -10,12 +11,20 @@ public class Health : MonoBehaviour
     public HealthBar healthBar; public HeartBar heartBar;
     public Lost lost;
     public Winning win;
+    public Image Healing;
 
     private void Awake() {
         if (healthBar != null)
         {
             healthBar.SetMaxHealth(maxHealth);
             
+        }
+    }
+    
+    public void Start()
+    {
+        if (gameObject.tag == "Player"){
+            Healing.fillAmount = 1;
         }
     }
 
@@ -34,6 +43,7 @@ public class Health : MonoBehaviour
 
     public void Heal(){
         health = health + heal;
+        Healing.fillAmount = 0;
         if (healthBar != null)
         {
             healthBar.SetCurrentHealth(health);
@@ -47,6 +57,9 @@ public class Health : MonoBehaviour
 
     public void Update()
     {
+        if (gameObject.tag == "Player"){
+            Healing.fillAmount = 1 - ((nextHealTime - Time.time)/healCooldown);
+        }
         if (health <= 0)
         {   
             if (gameObject.tag == "Player")
@@ -57,6 +70,8 @@ public class Health : MonoBehaviour
             else if (gameObject.tag == "Boss")
             {
                 win.Update();
+                Invoke("DestroySelf", 0.8f);
+
             }
             else 
             {
@@ -66,14 +81,21 @@ public class Health : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Time.time > nextHealTime)
-            {
-                if (health <= 4)
+            if (gameObject.tag == "Player"){
+                if (Time.time > nextHealTime)
                 {
-                    Heal();
-                    nextHealTime = Time.time + healCooldown;
+                    if (health <= 4)
+                    {
+                        Heal();
+                        nextHealTime = Time.time + healCooldown;
+                    }
                 }
             }
+
         }
+    }
+
+    public void DestroySelf(){
+        Destroy(gameObject);
     }
 }

@@ -545,6 +545,7 @@ MonoBehaviour:
   heartBar: {fileID: 9173699353978050206}
   lost: {fileID: 103826497743136972}
   win: {fileID: 0}
+  Healing: {fileID: 794152143996300425}
 --- !u!114 &103826497743136972
 MonoBehaviour:
   m_ObjectHideFlags: 0
