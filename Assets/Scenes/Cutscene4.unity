@@ -1100,6 +1100,12 @@ MonoBehaviour:
   - pageImage: {fileID: 21300000, guid: 0216b6a102566614386391dbfd017bec, type: 3}
     storyText: 
     nextMusic: None
+  - pageImage: {fileID: 21300000, guid: b56ad99c90e2741479923cbc2a82c650, type: 3}
+    storyText: 
+    nextMusic: None
+  - pageImage: {fileID: 21300000, guid: 230d8f240e006bc499a328d9970cd2c0, type: 3}
+    storyText: 
+    nextMusic: None
   pagePanel: {fileID: 347612375}
   TMP: {fileID: 89473093}
   nextScene: MainMenu
