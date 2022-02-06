@@ -2894,8 +2894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74bfeca4f80aa5549b6352c3894896f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minValue: {x: -10, y: -6, z: -100}
-  maxValue: {x: 10, y: 6, z: 100}
+  minValue: {x: -12, y: -10, z: -100}
+  maxValue: {x: 12, y: 11, z: 100}
   target: {fileID: 1305381724}
 --- !u!82 &1107914099
 AudioSource:
