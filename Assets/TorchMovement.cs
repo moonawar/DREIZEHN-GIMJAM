@@ -8,7 +8,8 @@ public class TorchMovement : MonoBehaviour
     public Camera cam;
     public Rigidbody2D rb;
     [SerializeField] private Transform target;
-    Vector2 rot;
+    Vector2 rot; public float angle;
+    public PlayerMovement playerMove; 
 
     void Update()
     {
@@ -19,8 +20,9 @@ public class TorchMovement : MonoBehaviour
     {
 
         Vector2 lookDir = rot - rb.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+        angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
+        playerMove.ChangeRotation(angle);
     }
 }
 

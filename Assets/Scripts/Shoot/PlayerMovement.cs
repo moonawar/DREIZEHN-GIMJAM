@@ -8,38 +8,47 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     public Camera cam;
-    Vector2 rot;
+    float rot; 
 
     public Vector2 pos;
 
-    // Update is called once per frame
+    public void ChangeRotation(float rotation){
+        rot = rotation;
+    }
+
     public void Update()
     {
         pos.x = Input.GetAxisRaw("Horizontal");
         pos.y = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetAxisRaw("Horizontal") > 0)
-        {
-            animator.SetBool("Kanan", true);
-        }
-        else if (Input.GetAxisRaw("Horizontal") < 0)
-        {
-            animator.SetBool("Kiri", true);
-        }
-        else if (Input.GetAxisRaw("Vertical") < 0)
-        {
-            animator.SetBool("Depan", true);
-        }
-        else if (Input.GetAxisRaw("Vertical") > 0)
-        {
+        if (rot > -45 && rot < 45)
+        {   
+            animator.SetBool("Depan", false);
             animator.SetBool("Belakang", true);
+            animator.SetBool("Kanan", false);
+            animator.SetBool("Kiri", false);
         }
-        else
+        else if (rot > -135 && rot < -45)
+        {
+            animator.SetBool("Kanan", true); 
+            animator.SetBool("Depan", false);
+            animator.SetBool("Belakang", false);
+            animator.SetBool("Kiri", false);
+                       
+        }
+        else if (rot > -225 && rot < -135)
         {
             animator.SetBool("Belakang", false);
             animator.SetBool("Depan", true);
             animator.SetBool("Kanan", false);
             animator.SetBool("Kiri", false);
+        }
+        else
+        {
+            animator.SetBool("Belakang", false);
+            animator.SetBool("Depan", false);
+            animator.SetBool("Kanan", false);
+            animator.SetBool("Kiri", true);
         }
     }
 
