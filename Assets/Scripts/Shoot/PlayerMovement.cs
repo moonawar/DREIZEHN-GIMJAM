@@ -15,8 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public void Update()
     {
         pos.x = Input.GetAxisRaw("Horizontal");
-        
         pos.y = Input.GetAxisRaw("Vertical");
+
         if (Input.GetAxisRaw("Horizontal") > 0)
         {
             animator.SetBool("Kanan", true);

@@ -10,6 +10,7 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] GameObject bullet;
     [SerializeField] GameObject explosion;
     Vector3 pos, bulletTranslation; Quaternion rot; float nextFireTime = 0; float nextExpTime = 0;
+    public Transform playerRotation;
 
     public Image Explosive;
 
@@ -32,7 +33,7 @@ public class PlayerShoot : MonoBehaviour
     {
         Explosive.fillAmount = 1 - ((nextExpTime - Time.time)/explodeCooldown);
         pos = transform.position;
-        rot = transform.rotation;   
+        rot = playerRotation.rotation;   
         if (Input.GetMouseButtonDown(0)){
             if (Time.time > nextFireTime)
             {

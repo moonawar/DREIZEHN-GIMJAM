@@ -3007,6 +3007,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 81482413238682986, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 81482413238682986, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 103826497743136972, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: wave
       value: 

@@ -450,7 +450,6 @@ GameObject:
   - component: {fileID: 3326912462546582631}
   - component: {fileID: 81482413238682986}
   - component: {fileID: 3934376070037515821}
-  - component: {fileID: 3392041100280751243}
   - component: {fileID: 7265272074709665854}
   - component: {fileID: 3516426301702332009}
   m_Layer: 0
@@ -612,22 +611,6 @@ MonoBehaviour:
   rb: {fileID: 81482413238682986}
   animator: {fileID: 3516426301702332009}
   pos: {x: 0, y: 0}
---- !u!58 &3392041100280751243
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5043699212918891480}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.34
 --- !u!114 &7265272074709665854
 MonoBehaviour:
   m_ObjectHideFlags: 0

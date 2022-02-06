@@ -1373,7 +1373,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 909177625}
-  - component: {fileID: 909177626}
   m_Layer: 0
   m_Name: Player Light 2D
   m_TagString: Untagged
@@ -1395,47 +1394,6 @@ Transform:
   m_Father: {fileID: 1305381724}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &909177626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909177624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LightType: 2
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
-  m_LightCookieSprite: {fileID: 21300000, guid: 950b45af830e3604dbeacf44ec26a4ff, type: 3}
-  m_UseNormalMap: 0
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0
-  m_ShadowVolumeIntensity: 0
-  m_PointLightInnerAngle: 360
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
-  m_PointLightDistance: 3
-  m_PointLightQuality: 1
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &909996558
 GameObject:
   m_ObjectHideFlags: 0
@@ -4358,6 +4316,14 @@ PrefabInstance:
       propertyPath: explosion
       value: 
       objectReference: {fileID: 3457334699767630486, guid: 7d1cb59ceb36c7446a86652272fb0bd6, type: 3}
+    - target: {fileID: 3326912462546582631, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3326912462546582631, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: playerRotation
+      value: 
+      objectReference: {fileID: 1952479531}
     - target: {fileID: 3402415573248036462, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -4366,10 +4332,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3516426301702332009, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 1107914095}
+    - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934376070037515821, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5043699212918891480, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4396,7 +4374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5043699212918891482, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.97
+      value: -2.754
       objectReference: {fileID: 0}
     - target: {fileID: 5043699212918891482, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4443,6 +4421,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7265272074709665854, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265272074709665854, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_PointLightInnerAngle
       value: 360
       objectReference: {fileID: 0}
@@ -4450,7 +4432,8 @@ PrefabInstance:
       propertyPath: heal
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7265272074709665854, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
 --- !u!4 &1305381724 stripped
 Transform:
@@ -10980,7 +10963,6 @@ GameObject:
   - component: {fileID: 1952479531}
   - component: {fileID: 1952479535}
   - component: {fileID: 1952479534}
-  - component: {fileID: 1952479533}
   - component: {fileID: 1952479532}
   m_Layer: 0
   m_Name: Torch Light 2D
@@ -11019,22 +11001,6 @@ MonoBehaviour:
   cam: {fileID: 1107914095}
   rb: {fileID: 1952479534}
   target: {fileID: 1305381724}
---- !u!58 &1952479533
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952479530}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 7
 --- !u!50 &1952479534
 Rigidbody2D:
   serializedVersion: 4
@@ -11043,7 +11009,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952479530}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -11097,6 +11063,37 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1982794523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5043699212918891480, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
+  m_PrefabInstance: {fileID: 1305381723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1982794524
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982794523}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.050626755, y: -12.41586}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 32, y: 32}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.013226, y: 5.9569798}
+  m_EdgeRadius: 0
 --- !u!1001 &2097015430
 PrefabInstance:
   m_ObjectHideFlags: 0
