@@ -38,7 +38,12 @@ public class CutsceneManager : MonoBehaviour
                 FindObjectOfType<AudioManager>().ChangeMusicTo(pages[currentPage].nextMusic, 1);
             }
 
-        } else {
+        }
+        else if (currentPage == 4)
+        {
+            SceneManager.LoadScene(1);
+        }
+        else {
             SceneManager.LoadScene(nextScene);
         }
 

@@ -24,7 +24,7 @@ public class LevelManager : MonoBehaviour
 
     public void StagesMenu()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void MainMenu()
@@ -35,6 +35,11 @@ public class LevelManager : MonoBehaviour
     public void ChoosePlayer()
     {
         SceneManager.LoadScene(2);
+    }
+    public void Exit()
+    {
+        Application.Quit();
+        Debug.Log("Exit");
     }
 
     // Update is called once per frame
