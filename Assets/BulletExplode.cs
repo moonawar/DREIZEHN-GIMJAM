@@ -9,11 +9,12 @@ public class BulletExplode : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Collider2D[] result = new Collider2D[10];
+        Collider2D[] result = new Collider2D[3];
         Physics2D.OverlapCircle(gameObject.transform.position, 3f, new ContactFilter2D(), result);
         foreach (Collider2D res in result)
         {
-            if (res.tag == "Enemy")
+            if (res != null){
+                if (res.tag == "Enemy")
             {
                 res.GetComponent<Health>().DamageSelf(2);
                 Destroy(gameObject);
@@ -31,10 +32,10 @@ public class BulletExplode : MonoBehaviour
             else if (res.name != "Player")
             {
                 Destroy(gameObject);
+            }            
             }
+
         }
-        
-        
     }
     void Update()
     {
