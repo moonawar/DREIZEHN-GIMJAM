@@ -24,7 +24,7 @@ public class LevelManager : MonoBehaviour
 
     public void StagesMenu()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
     public void MainMenu()

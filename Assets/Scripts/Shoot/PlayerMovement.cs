@@ -7,9 +7,10 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     public Animator animator;
+    public Camera cam;
+    Vector2 rot;
 
     public Vector2 pos;
-    Vector2 rot;
 
     // Update is called once per frame
     public void Update()
