@@ -3155,7 +3155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6549742979394291229, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8416877718469415897, guid: a52aaae6e1acd884ebd1762899946763, type: 3}
       propertyPath: heal
@@ -5514,6 +5514,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1305381724}
+    - target: {fileID: 8734060702087718368, guid: b32fea1bbb833a540b1ecd14579e269d, type: 3}
+      propertyPath: m_Size.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734060702087718368, guid: b32fea1bbb833a540b1ecd14579e269d, type: 3}
+      propertyPath: m_Size.y
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b32fea1bbb833a540b1ecd14579e269d, type: 3}
 --- !u!114 &2773045527596964546 stripped

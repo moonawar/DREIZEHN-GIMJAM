@@ -101,7 +101,7 @@ MonoBehaviour:
     rgba: 4278251775
   attackColor:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4288610430
   isOnAttack: 0
 --- !u!61 &5516279081748763556
 BoxCollider2D:

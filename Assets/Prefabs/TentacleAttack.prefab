@@ -99,10 +99,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warnColor:
     serializedVersion: 2
-    rgba: 4291348680
+    rgba: 4278250495
   attackColor:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4291348680
   isOnAttack: 0
 --- !u!58 &-7550977777446676605
 CircleCollider2D:
