@@ -7,7 +7,7 @@ public class LoadOnAnyKey : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            SceneManager.LoadScene("Cutscene1");
+            SceneManager.LoadScene("HowToPlay");
         }
     }
 }
